@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+<style>
+    
+    #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+    
+    .video-background-holder {
+  position: relative;
+  background-color: ;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+    .text-responsive {
+  font-size: calc(9% + 1vw + 1vh);
+}
+    
+    
+    
+    
+    </style>
+
+
+</head>
+<body>
+
+<div class="video-background-holder">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"id="myVideo">
+        <source src="assets/NorthLuzon.mp4" type="video/mp4">
+    </video>
+  <div class="video-background-content container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        
+        
+          <button id="myBtn" onclick="myFunction()">Pause</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<div class="container-fluid">
+    
+    
+    <div class="row">
+     
+     
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:450px;margin-left:0px;border:7px solid #16516d;background:url(assets/n1.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+        
+ <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:450px;margin-left:0px;border:7px solid #003366;background:url(assets/n2.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+
+    </div>
+
+    </div>
+        <br><br>
+
+    <div class="container-fluid">
+     <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;">
+    The Philippines is famous for its breathtaking scenery and natural beauty. It's a hidden gem featuring some of the world's most 
+                stunning beaches, crystal blue waters and tropical jungle. Even better? It's a bit off the beaten path, meaning it's not crawling with tourists!
+                <br><br>
+
+North Luzon Island is the largest of the islands in the Philippines. While it's not as tropical as many others, it is a UNESCO World Heritage site and home to indigenous peoples.
+        </p><br></div>
+    <br><br>
+    
+    
+   <div class="container-fluid">
+    
+    
+    <div class="row">
+     
+     
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:500px;margin-left:0px;border:7px solid black;background:url(assets/n3.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+        
+ <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:500px;margin-left:0px;border:7px solid #003366;background:url(assets/n4.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+
+    </div>
+
+    </div>
+    <img src="assets/n5.jpg"  class="img-fluid">
+    <br><br><br><br>
+   <div class="container-fluid">
+     <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;">
+         One interesting feature is that the lush green mountains contain pine trees instead of palms. 
+         <br><br>
+
+There are also an assortment of stunning waterfalls and incredible ancient rice terraces running along the sides of the cliffs.
+<br>
+  <p style="color:#003366">
+    NEXT
+  </p>
+       <a href="Bohinj.html"> <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;cursor:pointer;font-size:50px;text-decoration:none"id="pjq">
+ visit Bohinj
+  </p></a>
+    </div>
+    <br><br>
+<script>
+
+
+$(document).ready(function(){
+  $("#pjq").mouseenter(function(){
+    $("#pjq").css("color", "#43eBd8");
+  });
+  $("#pjq").mouseleave(function(){
+    $("#pjq").css("color", "#003366");
+  });
+});
+</script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

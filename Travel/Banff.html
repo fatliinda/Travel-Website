@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <style>
+    
+    #myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+    
+    .video-background-holder {
+  position: relative;
+  background-color: ;
+  height: calc(115vh - 82px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+     .text-responsive {
+  font-size: calc(9% + 1vw + 1vh);
+}
+    
+    
+    
+    
+</style>
+
+</head>
+<body>
+
+    
+    
+    
+    
+  
+<div class="video-background-holder">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"id="myVideo">
+        <source src="assets/Banff.mp4" type="video/mp4">
+    </video>
+  <div class="video-background-content container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        
+        
+          <button id="myBtn" onclick="myFunction()">Pause</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<div class="container-fluid">
+    
+    
+    <div class="row">
+     
+     
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"style=" width:1200px%;height:500px;margin-left:0px;border:7px solid black;background:url(assets/b2.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+        
+ <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"style=" width:1200px; height:500px;margin-left:0px;border:7px solid #003366;background:url(assets/b3.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+
+    </div>
+
+    </div> 
+     <br><br>
+
+    <div class="container-fluid">
+     <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;">
+  Surrounded on all sides by the Rocky Mountains, Banff was Canada's first national park. It's close to both the unforgettable Lake Louise and to Kananaskis County, as well as a thriving arts and entertainment scene. 
+         <br><br>
+
+Incredible waterfalls and hoodoos — unique rock formations that resemble cathedral spires — are sprinkled throughout the park.
+    
+        </p><br></div>
+    <br><br>
+   <div class="container-fluid">
+    
+    
+    <div class="row">
+     
+     
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:500px;margin-left:0px;border:7px solid #16516d;background:url(assets/b4.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+        
+ <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:500px;margin-left:0px;border:7px solid #003366;background:url(assets/b5.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+
+    </div>
+
+    </div> 
+     <img src="bf1.jpg" class="img-fluid">
+    <br><br>
+    <div class="container-fluid">
+     <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;">
+  The drive through the Rockies is incredible. Winding, steep mountain roads pass through ancient forests, and wildlife can be spotted all around you. Keep an eye out for passing elk and mountain goats along the cliffs.
+         <br><br>
+    <p style="color:#003366">
+    Next
+  </p>
+       <a href="NorthLuzon.html"> <p class="text-responsive"style="color:#003366;cursor:pointer;font-size:50px;text-decoration:none"id="pjq">
+ visit North Luzon
+        </p></a><br></div>
+    <br><br>
+    <script>
+
+
+$(document).ready(function(){
+  $("#pjq").mouseenter(function(){
+    $("#pjq").css("color", "#43eBd8");
+  });
+  $("#pjq").mouseleave(function(){
+    $("#pjq").css("color", "#003366");
+  });
+});
+</script>
+</body>

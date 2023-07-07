@@ -1,0 +1,239 @@
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+<style>/*#myVideo {
+  position: relative;
+  right: 0;
+    left:0;
+    margin-left: 0;
+  top: 20;
+  min-width: 100%; 
+  min-height: 800px;
+
+    opacity:0.7
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}*/
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+    
+    .video-background-holder {
+  position: relative;
+  background-color: black;
+  height: calc(100vh - 72px);
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background-holder video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.video-background-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.text-responsive {
+  font-size: calc(9% + 1vw + 1vh);
+}
+
+</style>
+
+
+</head>
+<body>
+
+    
+    
+    
+   
+   
+<div class="video-background-holder">
+  <div class="video-background-overlay"></div>
+  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"id="myVideo">
+        <source src="assets/vid1.mp4" type="video/mp4">
+    </video>
+  <div class="video-background-content container h-100">
+    <div class="d-flex h-100 text-center align-items-center">
+      <div class="w-100 text-white">
+        
+        
+          <button id="myBtn" onclick="myFunction()">Pause</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+<div class="container-fluid">
+    
+    
+    <div class="row">
+     
+     
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:450px;margin-left:0px;border:7px solid black;background:url(assets/nyc11.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+        
+ <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:450px;margin-left:0px;border:7px solid #433c33;background:url(assets/nyc2.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+
+    </div>
+
+    </div>
+	<br><br>
+        
+<div class="container-fluid">
+    
+  <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;">
+    Of course, on everyone's first time time visiting New York City, they sight-see.
+	<br><br>
+	Everyone needs to visit the Statue of Liberty, the Natural History Museum, Times Square, and all of those famous spots. 
+  </p>
+</div>
+<br>
+    
+    
+    
+   <div class="container-fluid">
+    
+    
+    <div class="row">
+     
+     
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:510px;margin-left:0px;border:7px solid #003366;background:url(assets/nyc3.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+        
+ <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6"width="1100px"style=" height:510px;margin-left:0px;border:7px solid #c6a985;background:urlassets/(assets/nyc5.jpg);
+                                                                                                  background-size:cover   " > </div>
+       
+
+    </div>
+
+    </div> 
+    
+   <img src="assets/nyc5.jpg" class="img-fluid">
+   
+   
+    <br><br>
+     <div class="container-fluid">
+     <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;">
+    However, New York is the kind of city you can visit throughout your lifetime and always discover something new.
+<br><br>
+My advice? Choose an interesting neighborhood and go local. Make it a point to visit hole-in-the-wall spots, dive bars, corner delis, and coffee shops.
+  </p><br>
+  <p style="color:#003366">
+    NEXT
+  </p>
+       <a href="Banff.html"> <p class="text-responsive"style="color:#003366;font-family: 'Playfair Display', serif;cursor:pointer;font-size:50px;text-decoration:none"id="pjq">
+ visit Banff
+  </p></a>
+</div>
+<script>
+
+
+$(document).ready(function(){
+  $("#pjq").mouseenter(function(){
+    $("#pjq").css("color", "#43eBd8");
+  });
+  $("#pjq").mouseleave(function(){
+    $("#pjq").css("color", "#003366");
+  });
+});
+</script>
+    
+    
+    
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
